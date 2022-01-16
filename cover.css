@@ -4,6 +4,11 @@
 
 
 /* Custom default button */
+
+body, html {
+  margin: 0;
+}
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
