@@ -56,3 +56,8 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+.roxy-background-cover {
+  background-image: url(https://media.discordapp.net/attachments/546720957272686596/932155097339801610/roxanne.png?width=820&height=683);
+  background-size: cover;
+}
