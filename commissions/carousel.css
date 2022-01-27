@@ -19,6 +19,9 @@ body {
 .marketing h2 {
   font-weight: 400;
 }
+.img {
+  border-radius: 50%;
+}
 /* rtl:begin:ignore */
 .marketing .col-lg-4 p {
   margin-right: .75rem;
