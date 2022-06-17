@@ -70,6 +70,9 @@ body {
   letter-spacing: -.05rem;
 }
 
+img {
+  border-radius: 10%;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
