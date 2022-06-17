@@ -3,7 +3,9 @@
 /*
  * Header
  */
-
+ img {
+  border-radius: 20%;
+}
  .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: 700;
@@ -68,10 +70,6 @@ body {
   line-height: 1;
   /* rtl:remove */
   letter-spacing: -.05rem;
-}
-
-img {
-  border-radius: 10%;
 }
 
 /* RESPONSIVE CSS
