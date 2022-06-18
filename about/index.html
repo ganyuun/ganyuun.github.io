@@ -27,17 +27,6 @@
   </header>
 </div>
   <body>
-    <script>
-      //real
-      function showArt(type) {
-        const elementToHide = type === 'illustrations' ? 'concept' : 'illustrations';
-        document.getElementById(type).classList.add('show');
-        document.getElementById(elementToHide).classList.remove('show');
-        
-        document.getElementById(`${type}-button`).classList.add('active');
-        document.getElementById(`${elementToHide}-button`).classList.remove('active');
-      }
-    </script>
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -82,195 +71,19 @@
   </body>
 
 <main>
-
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Athena's Portfolio</h1>
-        <p class="lead text-muted">Click the buttons below to see my different types of art! The view button on each of the cards will link you to my original post on Twitter.</p>
+        <h1 class="fw-light">About Me</h1>
+        <p class="lead text-muted">Hey, my name's Athena! I'm an aspiring concept artist based in the United States. I draw inspiration from many artists, mainly those I find on Twitter, and artists that work at companies/studios I aspire to work at someday! (Riot, West Studio). As you can see from my portfolio, I mainly draw a mix of anthropomorphic animals/creatures and characters from various manga, anime or VNs. With my art, I hope to inspire other artists as others inspire me.</p>
         <p>
-          <a href="https://linktr.ee/ganyuun" target="_blank" rel="noopener noreferrer" class="btn btn-primary my-2">Socials</a>
+          <a href="../portfolio/" target="_blank" class="btn btn-primary my-2">Portfolio</a>
         </p>
       </div>
     </div>
   </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-        <!-- Illustrations -->
-        <div class="buttons">
-          <div onClick="showArt('illustrations')" id="illustrations-button">Illustrations</div>
-          <div onClick="showArt('concept')" id="concept-button">Concept Art</div>
-        </div>
-        <div id="illustrations" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 hide">   
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/932394746490540073/takane_lui_cropped.png" alt="Takane Lui on the beach.">
-            <div class="card-body">
-              <p class="card-text">Takane Lui from Hololive basking in the bright sunshine.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1481475664175902720?s=20" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/932405772036481084/dergy.png" alt="A serene nature dragon smiling behind a tree branch.">
-            <div class="card-body">
-              <p class="card-text">A serene dragon.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1474168175126269958?s=20" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/932408718270795786/laserbeam_cropped.png" alt="A fox readying her laserbeam.">
-            <div class="card-body">
-              <p class="card-text">A fox readying her laserbeam.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1466904694115254275?s=20" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/930471825668988959/950945851566596157/uh_oh.png" alt="A menacing-looking fox with red backlighting.">
-            <div class="card-body">
-              <p class="card-text">A menacing-looking fox with red backlighting.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1501386730712322050?s=20&t=ncLRBM0QJ7nDsLRojZQuyg" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/951274927556812830/catkali.png" alt="K/DA Akali wearing a cat-themed hat, asleep on the wall.">
-            <div class="card-body">
-              <p class="card-text">I guess she fell asleep here.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1498009507724673024?s=20&t=ncLRBM0QJ7nDsLRojZQuyg" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/951274927837818960/kangel.png" alt="KAngel having a picnic, with a suspiciously artificial and bland background.">
-            <div class="card-body">
-              <p class="card-text">KAngel having a picnic. Nothing wrong here.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1490414996152627207?s=20&t=ncLRBM0QJ7nDsLRojZQuyg" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/951275909921534042/hades_foli.png" alt="A shiny Umbreon and a squirrel having fun on a nice, sunny day.">
-            <div class="card-body">
-              <p class="card-text">An Umbreon and a squirrel enjoying a nice, sunny day.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1494882954794962949?s=20&t=ncLRBM0QJ7nDsLRojZQuyg" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div> 
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/952688804630786058/compass.png" alt="A Lycanroc looking at his compass, while in a snowstorm.">
-            <div class="card-body">
-              <p class="card-text">A Lycanroc looking at his compass, while in a snowstorm.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1503108223578034176?s=20&t=Re7bxU-Pp93Xrftp-NzbHA" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        <!-- Concept Art -->
-        <div id="concept" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 hide">
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/969801337950863460/rie_concept_art_revised.png" alt="Concept art of Rie, the Vastayan Kitsune.">
-            <div class="card-body">
-              <p class="card-text">Concept art of Rie, the Vastayan Kitsune.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1504253186961514498" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-          <div class="card shadow-sm">
-            <img src="https://cdn.discordapp.com/attachments/546720957272686596/954922845820059698/rie_stand.png" alt="Another piece of concept art of Rie.">
-            <div class="card-body">
-              <p class="card-text">Another piece of concept art of Rie.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://twitter.com/ganyuun/status/1505358357653188608" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="https://cdn.discordapp.com/attachments/546720957272686596/987243079402668052/gabriel_luxheart.png" alt="A ref of Gabriel Luxheart the Lucario-Luxray hybrid.">
-              <div class="card-body">
-                <p class="card-text">A ref of Gabriel Luxheart the Lucario.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://twitter.com/ganyuun/status/1505777288536903683" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="https://cdn.discordapp.com/attachments/546720957272686596/987235349526884352/terrence_info.png" alt="A ref of Terrence, the fox dragon.">
-              <div class="card-body">
-                <p class="card-text">A ref of Terrence, the fox dragon.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <a href="https://twitter.com/ganyuun/status/1531066130567245825" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-secondary">View</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-          </div>
-        </div>  
-    </div>
-  </div>
 </main>
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
   </body>
 </html>
