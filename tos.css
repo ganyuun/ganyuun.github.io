@@ -1,0 +1,27 @@
+.terms {
+    display: flex;
+    flex-direction: row;
+}
+
+.terms li, .genTerms li {
+    padding-bottom: 10px;
+}
+
+.accept, .decline {
+    width: 50%
+}
+
+.accept ul li:before {
+    content: '✓ ';
+}
+
+.decline ul li:before {
+    content: '✗ ';
+}
+
+/* make the terms a column on phones */
+@media only screen and (max-width: 600px) {
+    .terms {flex-direction: column;}
+
+    .accept, .decline {width: 100%;}
+}
