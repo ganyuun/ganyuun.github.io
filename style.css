@@ -28,33 +28,26 @@ section:not(#top) {
     padding-bottom: 20px;
 }
 
-/* hide navbar dropdown on PC */
+/* hide navbar dropdown on PC, make header image smaller */
 @media only screen and (min-width: 768px) {
-    .dropdown {
-        display: none;
-    }
-
-    /* make header image smaller on PC */
-    .header {
-        width: 30%;
-    }
+    .dropdown {display: none;}
+    .header {width: 50%;}
+    .decoration {width: 30%}
 }
 
-/* hide navbar links on tablet */
-@media only screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+/* hide navbar links on tablet, make header image a little larger */
+@media only screen and (max-width: 767px) {
+    .nav-links {display: none;}
+    .header {width: 70%;}
+    .decoration {width: 70%}
 }
 
-/* hide navbar links & footer logo on phone */
+/* hide navbar links & footer logo on phone, make header larger */
 @media only screen and (max-width: 600px) {
-    .nav-links {
-        display: none;
-    }
-    .footer-logo {
-        display: none;
-    }
+    .nav-links {display: none;}
+    .footer-logo {display: none;}
+    .header {width: 100%}
+    .decoration {width: 80%}
 }
 
 nav {
@@ -157,10 +150,6 @@ nav li {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-.header {
-    width: 70%;
 }
 
 a {
