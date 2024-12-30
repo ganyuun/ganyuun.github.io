@@ -33,6 +33,7 @@ section:not(#top) {
     .dropdown {display: none;}
     .header {width: 50%;}
     .decoration {width: 30%}
+    .footer-container {gap: 10%;}
 }
 
 /* hide navbar links on tablet, make header image a little larger */
@@ -40,14 +41,22 @@ section:not(#top) {
     .nav-links {display: none;}
     .header {width: 70%;}
     .decoration {width: 70%}
+    .footer-container {gap: 10%;}
 }
 
-/* hide navbar links & footer logo on phone, make header larger */
+/* hide navbar links & footer logo on phone, make header larger, center footer */
 @media only screen and (max-width: 600px) {
     .nav-links {display: none;}
-    .footer-logo {display: none;}
     .header {width: 100%}
     .decoration {width: 80%}
+
+    .footer-container {gap: 5%;}
+    .footer-logo {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    .pages ul {padding-left: 0;}
 }
 
 nav {
@@ -190,6 +199,5 @@ h2 {
     background-color: #151617;
     display: flex;
     flex-direction: row;
-    gap: 10%;
     justify-content: center;
 }

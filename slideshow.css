@@ -93,8 +93,7 @@
     }
 }
 
-#comms li {
-    list-style-type: square;
-}
+#comms ul {list-style-position: inside}
+#comms li {list-style-type: square;}
 
 
