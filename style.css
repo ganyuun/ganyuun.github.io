@@ -35,6 +35,8 @@ section:not(#top) {
     .header {width: 50%;}
     .decoration {width: 30%}
     .footer-container {gap: 10%;}
+    .footer-container ul {margin-top: 0;}
+    .labels {padding-bottom: 10px;}
 }
 
 /* hide navbar links on tablet, make header image a little larger */
@@ -43,6 +45,17 @@ section:not(#top) {
     .header {width: 70%;}
     .decoration {width: 70%}
     .footer-container {gap: 10%;}
+
+    .footer-container {
+        gap: 5%;
+        font-size: 20px;
+    }
+    .labels {font-size: 24px;}
+    .footer-container ul {margin-top: 0;}
+    .footer-container li:not(.labels) {
+        margin: 5px;
+        padding: 4px;
+    }
 }
 
 /* hide navbar links & footer logo on phone, make header larger, center footer */
@@ -51,7 +64,13 @@ section:not(#top) {
     .header {width: 100%}
     .decoration {width: 80%}
 
-    .footer-container {gap: 5%;}
+    .footer-container {
+        gap: 5%;
+        font-size: 20px;
+    }
+    .footer-container li:not(.labels) {
+        padding: 4px;
+    }
     .footer-logo {
         display: none;
         margin: 0;
