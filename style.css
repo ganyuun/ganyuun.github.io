@@ -29,156 +29,22 @@ section:not(#top) {
     padding-bottom: 20px;
 }
 
-/* hide navbar dropdown on PC, make header image smaller */
+/* make header image & decoration smaller on PC */
 @media only screen and (min-width: 768px) {
-    .dropdown {display: none;}
     .header {width: 50%;}
     .decoration {width: 30%}
-    .footer-container {gap: 10%;}
-    .footer-container ul {margin-top: 0;}
-    .labels {padding-bottom: 10px;}
 }
 
-/* hide navbar links on tablet, make header image a little larger */
+/* make header image a little larger on tablets */
 @media only screen and (max-width: 767px) {
-    .nav-links {display: none;}
     .header {width: 70%;}
     .decoration {width: 70%}
-    .footer-container {gap: 10%;}
-
-    .footer-container {
-        gap: 5%;
-        font-size: 20px;
-    }
-    .labels {font-size: 24px;}
-    .footer-container ul {margin-top: 0;}
-    .footer-container li:not(.labels) {
-        margin: 5px;
-        padding: 4px;
-    }
 }
 
-/* hide navbar links & footer logo on phone, make header larger, center footer */
+/* make header larger & center footer on phones */
 @media only screen and (max-width: 600px) {
-    .nav-links {display: none;}
     .header {width: 100%}
     .decoration {width: 80%}
-
-    .footer-container {
-        gap: 5%;
-        font-size: 20px;
-    }
-    .footer-container li:not(.labels) {
-        padding: 4px;
-    }
-    .footer-logo {
-        display: none;
-        margin: 0;
-        padding: 0;
-    }
-    .pages ul {padding-left: 0;}
-}
-
-nav {
-    z-index: 999;
-    top: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    background-color: #151617;
-    justify-content: space-between;
-    position: fixed;
-    font-weight: bold;
-    width: 100%;
-    height: 90px;
-
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.nav-logo {
-    padding-left: 25px;
-}
-
-.nav-links {
-    padding-top: 1.7em;
-}
-
-.nav-links a {
-    font-size: 30px;
-    text-decoration: none;
-}
-
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.dropdown:hover, .dropbtn {
-    background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 a {
@@ -212,12 +78,4 @@ h2 {
 
 .comm-closed {
     color: #f06e4d;
-}
-
-.footer-container {
-    padding: 50px;
-    background-color: #151617;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }

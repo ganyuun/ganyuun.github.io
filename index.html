@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zoroaku's portfolio, commission prices, and more.">
     <title>zoro - aku</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="/components/templates.js"></script>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 
     <!-- OpenGraph meta tags -->
@@ -23,44 +25,7 @@
 </head>
 
 <body>
-<section id="top">
-    <nav id="navbar">
-        <div class="nav-logo">
-            <ul>
-                <li class="logo">
-                    <a href="#">
-                        <img src="/assets/logo horizontal.svg" alt="Zoroaku logo" width="100" height="100">
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="nav-links">
-            <ul>
-                <li class="nav-item"><a href="/about.html">About</a></li>
-                <li class="nav-item"><a href="/tos.html">TOS</a></li>
-                <li class="nav-item"><a href="/prices.html">Prices</a></li>
-                <li class="nav-item"><a href="/gallery.html">Gallery</a></li>
-            </ul>
-        </div>
-
-        <div class="dropdown">
-            <button class="dropbtn">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50" fill="#F4E4DC">
-                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
-                </svg>
-            </button>
-
-            <div class="dropdown-content">
-                <a href="/about.html">About</a>
-                <a href="/tos.html">TOS</a>
-                <a href="/prices.html">Prices</a>
-                <a href="/gallery.html">Gallery</a>
-            </div>
-        </div>
-    </nav>
-</section>
+<nav-header></nav-header>
 
 <section id="main">
     <img src="/assets/header.webp" alt="A header image of a Zoroark" class="responsive header">
@@ -72,41 +37,7 @@
     <p><strong>Note:</strong> Some of my art examples may still have watermarks of my old handle/domain on them! As time goes on, I'll make updated examples!</p>
 </section>
 
-<footer>
-    <div class="footer-container">
-        <div class="footer-logo">
-            <img src="/assets/logo.svg" alt="Zoroaku logo" style="width: 40%; height:auto; min-width:80px; min-height:80px;">
-        </div>
-
-        <div class="pages">
-            <ul>
-                <li class="labels"><strong>Other Pages</strong></li>
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/tos.html">TOS</a></li>
-                <li><a href="/prices.html">Prices</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-            </ul>
-        </div>
-
-        <div class="contact">
-            <ul>
-                <li class="labels"><strong>Contact</strong></li>
-                <li><a href="mailto:zoroaku.art@gmail.com">Email</a></li>
-                <li><a href="https://discord.com/users/776824714517413939">Discord</a></li>
-            </ul>
-        </div>
-
-        <div class="social-links">
-            <ul>
-                <li class="labels"><strong>Socials</strong></li>
-                <li><a href="https://bsky.app/profile/zoroaku.art">Bluesky</a></li>
-                <li><a href="https://x.com/zoro_aku">Twitter</a></li>
-                <li><a href="https://ko-fi.com/zoro_aku">Ko-fi</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
+<custom-footer></custom-footer>
 
 </body>
 </html>
