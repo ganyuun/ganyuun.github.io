@@ -16,6 +16,7 @@
         margin: auto;
         width: 60%
     }
+    .slideshow-img {width: 80%;}
 }
 
 /* larger callouts on tablet & mobile */
@@ -29,6 +30,7 @@
         overflow: hidden;
     }
     .portfolio-lightbox span {width: 100%}
+    .slideshow-img {width: 100%;}
 }
 
 /* Slideshow container */
@@ -36,6 +38,16 @@
     max-width: 1000px;
     position: relative;
     margin: auto;
+}
+
+.slideshow-container img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: 0.2s ease;
+}
+
+.slideshow-container img:hover {
+    filter: brightness(70%);
 }
 
 /* Hide the images by default */
