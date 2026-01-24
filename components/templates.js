@@ -27,7 +27,7 @@ customElements.define(
                     }
         
                     nav {
-                        z-index: 999;
+                        z-index: 998;
                         top: 0;
                         padding: 0;
                         display: flex;
