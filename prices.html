@@ -385,6 +385,8 @@
     }
     x[slideIndex[no]-1].style.display = "block";
   }
+
+  addEventListener("keydown", function(event) {if (event.key === 'Escape') {window.location.hash = "#!";} });
 </script>
 
 <custom-footer></custom-footer>

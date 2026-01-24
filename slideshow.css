@@ -3,18 +3,18 @@
 /* smaller callout & lightbox on PC */
 @media only screen and (max-width: 2560px) {
     details {
-        width: 60%;
+        width: 80%;
         margin: auto;
         resize: both;
         overflow: auto;
     }
     details img {
         object-fit: contain;
-        max-width: 100%;
+        max-width: 98%;
     }
     .portfolio-lightbox span {
         margin: auto;
-        width: 60%
+        width: 80%
     }
     .slideshow-img {width: 80%;}
 }
